@@ -1,0 +1,63 @@
+para iniciar o serve do angular usamos o ng serve
+
+e par criar um novo componente com class para test como as importaçoes do componentes 
+dentro do app.module cria tambem um html separado um css
+
+para criamos componentes podemos dar o ng g c e o nome do componente ele ja vai criar 
+pasta e outras nescessidade que ele precisa e importa automaticamente os dados no app.modulo
+
+para gerar um module precisamos colocar ng g m e o nodo do module
+
+
+
+_______________________________________MODULE_________________________________________
+
+quando estivermos importando algo do angular {} '' temos que colocar o que foi importado dentro
+do imports do module 
+
+provider ele serve para verificar login altenticação e entre outros 
+
+bootstrap [AppComponent] serve para chamar o appcomponent onde estar todas as nossa telas 
+sendo assim um aplicaçao SPA
+
+quando criamos um modulo para que ele funcione na parte geral devemos dar um exports
+
+ir no app geral module dentro do importe dele devemos colocar no nosso module 
+assim ele permitirar que acessemos o componente dele 
+
+e todas as outros componente que esteja declarado no app geral terar acesso dos  exports de  componentes 
+ 
+ e mesmo se eu criar outro componente dentro deste modulo so preciso chamar ele para o componente.html do module
+ que o app module geral ja vai conseguir ultilzar ele sem dar erro, mais casos importamos ele poderar ser 
+ usado pelo app module geral
+
+
+
+
+______________________________typescript_________________________________________________
+
+
+para usarmos o typescript usamos o tsc  a suas extensoes tem que esta em .ts , .tsx, .d.ts
+
+sao os tipos de arquivos que ele funciona corretamente quando rodamos ele ele gera um js
+
+saber programaçao funcional 
+
+
+
+____________________________________________Html____________________________________________
+
+quando criamos uma variavel no js podepos inicalizamos ela no construtor podemos pegar ela 
+pela interpolação ou seja dentro de duas {{}}
+
+
+
+
+
+____________________________________________DIRETIVAS_____________________________________
+
+*ngFor="declara um variavel local" ele percore ate o tamondo do array 
+
+_____________________________________BiBiografias__________________________________________
+
+es6-features.org
