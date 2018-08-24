@@ -99,14 +99,22 @@ para criar propety binding ele e feito na seguinte forma devemos colocar '[]' ou
 
 quando nao existir uma propriedade podemos usar o [attr.o elemento]
 
-class Style binding ele no lugar de trabalhar com variavel e component ele trabalha com css
+
+*class Style binding ele no lugar de trabalhar com variavel e component ele trabalha com css
 
 podemos definir uma varivel no html usando o # o nome que deseja passar mais (change)="0"
 apos definir podemos passar dentro das tag 
+
 [class.a class que voce deseja] = "sua variavel criada.o valor dela  == 'como uma class que voce quer que ela compare'"
 
+
+*Evente binding serve para voce ficar escultando eventos que irar acontecer 
+
+para ultilizamos o evento usamos (click)="" para passamor valores do input para os Eventos usamos $event
 
 
 _____________________________________BiBiografias__________________________________________
 
 es6-features.org
+w3c evente reference
+mdn evente reference
