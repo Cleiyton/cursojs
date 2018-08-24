@@ -87,7 +87,23 @@ temos o propriedade bind que tambem temos essa saida no template
 temos o evento = "handler" que esse metodos estao no componente onde conseguimos execultar metodos no componente
  onde podemos realizar algumas logicas
 
- e temos o databandi onde podemos manter tanto o template quanto o componente atualizados 
+ e temos o databandi onde podemos manter tanto o template quanto o componente atualizados isso e bom quando
+ trabalhamos com formularios  dentro da interpolação podemos tambem atribuir expreçoes logicas
+
+geito de fazer interpolação sempre dentro de duas {{}} que facilita fazer concatenação e uma interpolação
+tambem e propety binding
+
+ ####################parte do propety binding##############################################
+
+para criar propety binding ele e feito na seguinte forma devemos colocar '[]' ou colocar o bind-atributo nos atributos da tag 
+
+quando nao existir uma propriedade podemos usar o [attr.o elemento]
+
+class Style binding ele no lugar de trabalhar com variavel e component ele trabalha com css
+
+podemos definir uma varivel no html usando o # o nome que deseja passar mais (change)="0"
+apos definir podemos passar dentro das tag 
+[class.a class que voce deseja] = "sua variavel criada.o valor dela  == 'como uma class que voce quer que ela compare'"
 
 
 
