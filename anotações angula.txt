@@ -80,6 +80,16 @@ ngAfterViewChecked a cada verificação de cconteudo / conteudo filho
 
 ngOnDestroy antes da diretiva/ component ser destruido
 
+ng lint serve para verificar se seu codigo esta nos padroes correto da google
+
+ng teste utilizando o jasmine 
+
+e2e da uama olhada no protector 
+
+dar uma olhada no karma para ver como serve para configurar 
+
+embler/cli dar uma olhada para ver como os diretorios são criados 
+
 _____________________________________________Service__________________________________
 
 @Injectable  serve para permitir que ela possa ser injetada sempre que  tiver servico 
@@ -148,3 +158,5 @@ _____________________________________BiBiografias_______________________________
 es6-features.org
 w3c evente reference
 mdn evente reference
+
+https:// angular.io/docs
