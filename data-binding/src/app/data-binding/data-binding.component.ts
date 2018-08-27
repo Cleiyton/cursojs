@@ -23,11 +23,23 @@ export class DataBindingComponent implements OnInit {
 
   urlImagem: string = 'https://s2.glbimg.com/tLXQrHyP20CDJBCPBChJJcmcC88=/e.glbimg.com/og/ed/f/original/2018/04/06/eso1810a.jpg'
 
+  nomeDocurso:string = "angular";
+  
+  valorInicial = 15;
+
   valorAtual: String = "";
 
   ValorSalvo = '';
 
   isMouseOver: boolean = false;
+
+  nome: string = 'abc';
+
+  pessoa: any = {
+    nome: 'cleiton',
+    idade: 22
+
+  }
 
   onMouseOverOut() {
 
@@ -56,6 +68,10 @@ export class DataBindingComponent implements OnInit {
 
     this.valorAtual = (<HTMLInputElement>evento.target).value
 
+  }
+
+  onMudouValor(evento) {
+    console.log(evento.novoValor)
   }
 
   constructor() { }

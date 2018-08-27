@@ -61,7 +61,24 @@ ____________________________________________DIRETIVAS___________________________
 
 *ngFor="declara um variavel local" ele percore ate o tamondo do array 
 
+ngModel serve para criar variavel de referencia dentro no html 
 
+ngModelChange  nao precisamos passar o valor do evento que queremos o angular faz isso altomatiamente 
+
+ngOnChanges antes #2 e quando valor propety-bind e atualizados
+
+ngOnInit quando component e inicializado e aqui que fazemos a chamada nos servidores para pegar
+os dados 
+
+ngDoCheck a cada ciclo de verificação de mudanças 
+
+ngAfterContentlnit depois de inserir conteudo externo na view
+
+ngAfterContentChecked a cada verificação de conteudo inserido 
+
+ngAfterViewChecked a cada verificação de cconteudo / conteudo filho 
+
+ngOnDestroy antes da diretiva/ component ser destruido
 
 _____________________________________________Service__________________________________
 
@@ -111,6 +128,19 @@ apos definir podemos passar dentro das tag
 *Evente binding serve para voce ficar escultando eventos que irar acontecer 
 
 para ultilizamos o evento usamos (click)="" para passamor valores do input para os Eventos usamos $event
+
+
+* Two-way data binding
+
+ultilizamos as duas os dois componente junto tanto o [] como o () ou seja o que esta de fora defini o que 
+ela e [()]... ou seja chamamos de banana na caixa 
+
+propety bind 
+
+serve para referenciar valores de de um coponete para outro 
+ultilizando o @Input() e nao esquecer de importa ele no angular/corretamente
+para ultilizamos o propety bind se for um valor fixo nao precisa usar []
+mais casso esse valor venha de uma variavel ai temos que usar o []
 
 
 _____________________________________BiBiografias__________________________________________
