@@ -10,6 +10,9 @@ pasta e outras nescessidade que ele precisa e importa automaticamente os dados n
 
 para gerar um module precisamos colocar ng g m e o nodo do module
 
+para criarmos uma diretiva podemos usar o ng g d ela cria so um aquivo typescript que pode 
+ser usado por todo nosso codigo 
+
 
 
 _______________________________________MODULE_________________________________________
@@ -89,6 +92,8 @@ e2e da uama olhada no protector
 dar uma olhada no karma para ver como serve para configurar 
 
 embler/cli dar uma olhada para ver como os diretorios são criados 
+
+
 
 _____________________________________________Service__________________________________
 

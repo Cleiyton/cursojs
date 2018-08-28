@@ -1,0 +1,28 @@
+<h5>Style com property binding (Style binding)</h5>
+
+<button 
+[style.backgroundColor]="ativo ? 'blue': 'gray'"
+[style.color]="ativo ? 'white' : 'black'"
+[style.fontWeight]="ativo ? 'bold': 'normal'"
+[style.fontSize]="tamanhoFonte + 'px'"
+(click)="mudarAtivo()">
+Meu atributo 'ativo'
+  
+</button>
+
+<h5>Styles com diretiva ng Style</h5>
+
+<button 
+  [ngStyle]="{
+    'backgroundColor': (ativo ? 'blue': 'gray'),
+    'color': (ativo ? 'white' : 'black'),
+    'fontWeight': (ativo ? 'bold' : 'normal'),
+    'fontSize': tamanhoFonte + 'px'
+
+  }"
+(click)="mudarAtivo()">
+Meu atributo 'ativo'
+  
+</button>
+
+<input type="text" [(ngModel)]="tamanhoFonte">
