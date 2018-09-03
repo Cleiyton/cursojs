@@ -4,4 +4,26 @@
 
 <button appFundoAmarelo> Botão com fundo amarelo.</button>
 
-<p appHighlightMouse>Tesxto com highlightt quando passo o mouse </p>
+<p appHighlightMouse>Texto com highlightt quando passo o mouse </p>
+
+<p [appHighlight]="'red'" [defaultColor]="'grey'">cores customizadas </p>
+
+
+
+<div *ngIf="mostrarCurso">
+  Lista de Curso
+</div>
+
+
+<div *ngElse="mostrarCurso">
+  Não existem cursos para serem Listados.
+</div>
+
+<br>
+<button (click)="onMonstrarCursos()">Mostrar ou esconder cursos </button>
+
+<ng-template [ngElse]="mostrarCurso">
+  <div>
+    Não existem cursos para serem listados.
+  </div>
+</ng-template>
