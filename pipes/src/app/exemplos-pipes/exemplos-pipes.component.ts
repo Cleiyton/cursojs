@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExemplosPipesComponent implements OnInit {
 
+  constructor() { }
   livro: any = {
     titulo: 'Learning JavaScript Data Structures and Algorithms 2nd ed',
     rating: 4.54321,
@@ -16,7 +17,7 @@ export class ExemplosPipesComponent implements OnInit {
     url: 'http://a.co/glqjpRP'
   };
 
-  constructor() { }
+  livros:string[] = ['Java', 'Angular  2']
 
   ngOnInit() {
   }

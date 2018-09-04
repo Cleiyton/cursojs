@@ -1,10 +1,18 @@
-<p>Título:{{livro.titulo}}</p>
-<p>Estrelas: {{livro.rating}}</p>
-<p>Páginas: {{livro.numeroPaginas}}</p>
-<p>Preço: {{livro.preco}}</p>
-<p>Data Lançamento : {{livro.dataLancamento}}</p>
-<p>url: {{livro.url}}</p>
+<h5>Exemplos de Pipes</h5>
 
+<p>Título: {{ livro.titulo | uppercase | lowercase | camelCase}}</p>
+<p>Estrelas: {{ livro.rating | number:'1.1-1' }}</p>
+<p>Páginas: {{ livro.numeroPaginas | number }}</p>
+<p>Preço: {{ livro.preco | currency:'BRL' }}</p>
+<p>Data Lançamento: {{ livro.dataLancamento | date }}</p>
+<p>Url: {{ livro.url }}</p>
 <br>
+<p>Livro: {{ livro | json }}</p>
 
-<p>Livro: {{livro}}</p>
+
+<ul>
+  <li *ngFor="let liv of livros | filtroArray">
+    {{ liv }}
+
+  </li>
+</ul>
