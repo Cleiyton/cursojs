@@ -15,16 +15,16 @@ export class CursosComponent implements OnInit {
   pagina: number;
   inscricao: Subscription
 
-  constructor(private route:ActivatedRoute,
-    private cursoService: CursosService, 
-   private router: Router ) { }
+  constructor(private route: ActivatedRoute,
+    private cursoService: CursosService,
+    private router: Router) { }
 
   ngOnInit() {
 
-    this.cursos= this.cursoService.getCursos();
+    this.cursos = this.cursoService.getCursos();
 
     this.inscricao = this.route.queryParams.subscribe(
-      (queryParams:any )=>{
+      (queryParams: any) => {
         this.pagina = queryParams['pagina'];
 
       });
@@ -32,13 +32,13 @@ export class CursosComponent implements OnInit {
   }
 
 
-  ngOnDestroy(){
+  ngOnDestroy() {
     this.inscricao.unsubscribe();
   }
 
-  proximaPagina(){
+  proximaPagina() {
     //this.pagina++;
     this.router.navigate(['/cursos'],
-    {queryParams:{'pagina': ++this.pagina}});
+      { queryParams: { 'pagina': ++this.pagina } });
   }
 }
