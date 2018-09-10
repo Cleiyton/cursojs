@@ -1,3 +1,6 @@
+
+
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -11,6 +14,10 @@ import { LoginComponent } from './login/login.component';
 import { CursosModule } from './cursos/cursos.module';
 import { AppRoutingModule } from './app.routing.module';
 import { AlunosModule } from './alunos/alunos.module';
+import { AuthService } from './login/auth.service';
+import { CursosGuard } from './guards/cursos.guard';
+import { AuthGuard } from './guards/auth.guard';
+import { AlunosGuard } from './guards/alunos.guard';
 
 //import { CursoDetalheComponent } from './cursos/curso-detalhe/curso-detalhe.component';
 //import { CursosService } from './cursos/cursos.service';
@@ -34,6 +41,11 @@ import { AlunosModule } from './alunos/alunos.module';
     AppRoutingModule
     //routing
   ],
+  providers: [
+    AuthService,
+    AuthGuard,
+    CursosGuard,
+    AlunosGuard],
   // providers: [CursosService],
   bootstrap: [AppComponent]
 })
