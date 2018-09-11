@@ -14,7 +14,10 @@ import { AuthGuard } from './guards/auth.guard';
 
 
 const appRoutes: Routes = [
-    //{path: 'cursos', loadChildren: 'app/cursos/cursos.module#CursosModule'},
+    {path: 'cursos', loadChildren: './cursos/cursos.module#CursosModule', canActivate:[AuthGuard], 
+    canActivateChild:[CursosGuard], canLoad:[AuthGuard]},
+    {path: 'alunos', loadChildren: './alunos/alunos.module#AlunosModule', canActivate:[AuthGuard],
+    canLoad:[AuthGuard]},
 
    // { path: 'cursos', component: CursosComponent, canActivate: [AuthGuard], canActivateChild: [CursosGuard] },
     //{ path: 'curso/:id', component: CursoDetalheComponent },
